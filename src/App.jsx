@@ -1,10 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import Main from "./pages/Main";
-import { Reset } from "styled-reset";
+import { GlobalStyle } from './styles';
 function App() {
   return (
     <>
-      <Reset />
+      <GlobalStyle/>
       <Routes>
         <Route path="/" element={<Main />} />
       </Routes>

@@ -3,3 +3,15 @@
   width: 18rem;
   height: 21rem;
 }
+.mainLoadingText {
+  margin-top: 3rem;
+  background-color: rgb(253 215 77);
+  color: rgb(48 23 23);
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 15rem;
+  height: 2rem;
+  border-radius: 10px;
+  font-weight: bold;
+}

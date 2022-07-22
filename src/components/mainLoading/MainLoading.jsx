@@ -1,16 +1,14 @@
 import React from "react";
-import styles from "./mainLoadong.module.css";
+import styles from "./mainLoading.module.css";
 const MainLoading = () => {
   return (
     <>
       <img
-        src="./public/img/mainLogo.png"
+        src="/img/mainLogo.png"
         className={styles.mainLoadingImg}
         alt="4cans10000"
       />
-      <div>
-      
-      </div>
+      <div className={styles.mainLoadingText}>편의점 맥주의 모든 것!</div>
     </>
   );
 };
