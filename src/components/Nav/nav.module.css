@@ -1,0 +1,23 @@
+
+
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: rows;
+  margin: 2rem;
+  width: 100%;
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  margin-left: 1.5rem;
+}
+.menuBar {
+  font-size: 30px;
+  margin-right: 1.5rem;
+}
