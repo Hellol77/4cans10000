@@ -7,7 +7,9 @@ ${reset}
           props.color === true ? "white" : `rgb(243,250,242)`}
     }
     :root{ //색, 폰트 설정, radius 설정
-        
+        --button-color:rgb(111 232 151);
+        --button-non-color:rgb(113 112 112);
+        --input-color:#ddd;
     }
 `;
 
