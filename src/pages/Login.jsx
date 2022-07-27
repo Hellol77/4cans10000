@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Nav from "../components/Nav/Nav";
 import MainLoading from "../components/mainLoading/MainLoading";
 import LoginBox from "../components/loginBox/LoginBox";
-const Main = () => {
+const Login = () => {
   const [loadingTimer, setLoadingTimer] = useState(true);
 
   useEffect(() => {
@@ -33,4 +33,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default Login;

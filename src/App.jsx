@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
-import Main from "./pages/Main";
+import Login from "./pages/Login";
 import { GlobalStyle, MainDiv } from "./styles";
 function App() {
   const [color, setColor] = useState(false);
@@ -19,7 +19,7 @@ function App() {
 
       <MainDiv>
         <Routes>
-          <Route path="/" element={<Main />} />
+          <Route path="/" element={<Login />} />
         </Routes>
       </MainDiv>
     </>
