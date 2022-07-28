@@ -1,25 +1,16 @@
 import { useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
+import Profile from "./pages/Profile";
 import { GlobalStyle, MainDiv } from "./styles";
 function App() {
-  const [color, setColor] = useState(false);
-  useEffect(() => {
-    const timer = setTimeout(() => {
-      setColor(true);
-    }, 2000);
-
-    return () => {
-      clearTimeout(timer);
-    };
-  }, []);
   return (
     <>
-      <GlobalStyle color={color} />
-
+      <GlobalStyle />
       <MainDiv>
         <Routes>
           <Route path="/" element={<Login />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </MainDiv>
     </>
