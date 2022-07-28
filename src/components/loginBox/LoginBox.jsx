@@ -11,7 +11,7 @@ const LoginBox = () => {
     setLoginState(false);
   };
   return (
-    <>
+    <div className={styles.main}>
       <div className={styles.loginBox}>
         <div className={styles.imgDiv}>
           <img src="/img/logo.png" alt="네캔만원" className={styles.loginImg} />
@@ -85,7 +85,7 @@ const LoginBox = () => {
           </>
         )}
       </div>
-    </>
+    </div>
   );
 };
 

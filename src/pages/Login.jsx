@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from "react";
-import Nav from "../components/Nav/Nav";
+
 import MainLoading from "../components/mainLoading/MainLoading";
 import LoginBox from "../components/loginBox/LoginBox";
 const Login = () => {
   const [loadingTimer, setLoadingTimer] = useState(true);
-
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoadingTimer(false);
+      
     }, 2000);
 
     return () => {
@@ -17,8 +17,6 @@ const Login = () => {
 
   return (
     <>
-      <Nav />
-
       {loadingTimer === true ? (
         //2초간 로딩
         <>

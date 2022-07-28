@@ -15,3 +15,12 @@
   border-radius: 10px;
   font-weight: bold;
 }
+
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(243, 250, 242);
+}
