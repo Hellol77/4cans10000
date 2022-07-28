@@ -1,7 +1,7 @@
 import React from 'react';
 import MainButtons from '../components/button/main_buttons';
 
-const Main = () => {
+const Menu = () => {
     return (
         <>
             <MainButtons />
@@ -9,4 +9,4 @@ const Main = () => {
     );    
 };
 
-export default Main;
+export default Menu;

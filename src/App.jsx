@@ -1,20 +1,19 @@
 import { Route, Routes } from "react-router-dom";
 import Login from "./pages/Login";
-import Main from "./pages/main";
+import Menu from "./pages/Menu";
 import Profile from "./pages/Profile";
-import { GlobalStyle, MainDiv } from "./styles";
+import { GlobalStyle } from "./styles";
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <MainDiv>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/profile" element={<Profile />} />
-        </Routes>
-        <Main />
-      </MainDiv>
+
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/menu" element={<Menu />} />
+      </Routes>
     </>
   );
 }

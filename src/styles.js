@@ -27,10 +27,3 @@ ${reset}
     }
 `;
 
-export const MainDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  /* height: calc(100vw / 9 * 16); */
-`;
