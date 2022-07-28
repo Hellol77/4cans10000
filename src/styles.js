@@ -10,10 +10,20 @@ ${reset}
         font-weight: 500;
     }
     :root{ //색, 폰트 설정, radius 설정
-        --button-color:rgb(111 232 151);
+        --button-color:#AAE8BE;
         --button-non-color:rgb(113 112 112);
         --input-color:#ddd;
         --background-color:rgb(255 255 255);
+
+        --font-large: 24px;
+        --font-medium: 15px;
+        --font-small: 12px;
+    }
+    button {
+        background-color: var(--button-color);
+        cursor: pointer;
+        border: none;
+        outline: none;
     }
 `;
 
