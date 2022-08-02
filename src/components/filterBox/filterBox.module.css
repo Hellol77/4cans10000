@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    width: 60px;
+    height: 35px;
+    border: 1.5px solid #FDC74B;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    margin-right: 6px;
+    color: #FDC74B;
+    background-color: transparent;
+    font-weight: 700;
+}
+
+.box:nth-child(5) {
+    font-size: 11px;
+}
+
+
