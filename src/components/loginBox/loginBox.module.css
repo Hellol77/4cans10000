@@ -146,3 +146,11 @@ button {
 select {
   color: black;
 }
+
+.ymd {
+  margin-top: 5px;
+  border: none;
+  border-bottom: 1px solid var(--input-color);
+  width: 100%;
+}
+
