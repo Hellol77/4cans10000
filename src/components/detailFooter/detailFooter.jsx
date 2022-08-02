@@ -3,7 +3,6 @@ import styles from './detailFooter.module.css';
 
 const DetailFooter = () => {
     const [like, setLike] = React.useState(null);
-    const [preLike, setPreLike] = React.useState(null);
 
     const onLikeClick = (e) => {
         setLike(e.target.id);
@@ -12,17 +11,21 @@ const DetailFooter = () => {
 
     React.useEffect(
         (e) => {
-            if (like !== null) {
+            if (like == 'heartReg') {
                 let cur = document.getElementById(like);
                 cur.style.display = "none";
+                cur = document.getElementById('heartSol');
+                cur.style.display = "block";
             }
 
-            if (preLike !== null) {
-                let pre = document.getElementById(preLike);
-                pre.style.display = "block";
+            if (like == 'heartSol') {
+                let cur = document.getElementById(like);
+                cur.style.display = "none";
+                cur = document.getElementById('heartReg');
+                cur.style.display = "block";
             }
 
-            setPreLike(like);
+            setLike(like);
         }, [like]
     );
 
