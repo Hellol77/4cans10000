@@ -5,6 +5,7 @@ import Profile from "./pages/Profile";
 import { GlobalStyle } from "./styles";
 import Like from "./pages/Like";
 import Random from "./pages/Random";
+import Search from "./pages/Search";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/menu" element={<Menu />} />
         <Route path="/like" element={<Like />} />
         <Route path="/random" element={<Random />} />
+        <Route path="/search" element={<Search />} />
       </Routes>
     </>
   );
