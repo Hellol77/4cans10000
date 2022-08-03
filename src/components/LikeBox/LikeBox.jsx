@@ -1,18 +1,19 @@
 import React from "react";
 import styles from "./likeBox.module.css";
 import BeerBox from "../beerBox/beerBox";
-const LikeBox = () => {
+
+const LikeBox = (props) => {
   return (
     <>
       <div className={styles.mainBox}>
-        <BeerBox />
-        <BeerBox />
-        <BeerBox />
-        <BeerBox />
-        <BeerBox />
-        <BeerBox />
-        <BeerBox />
-       
+        {props.data.beer_list.map((i) => (
+          <BeerBox
+            key={i.id}
+            image={i.image_url}
+            title={i.beer_name}
+            description={i.information}
+          />
+        ))}
       </div>
     </>
   );
