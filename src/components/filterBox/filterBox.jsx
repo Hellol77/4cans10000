@@ -4,7 +4,6 @@ import styles from './filterBox.module.css';
 const FilterBox = (props) => {
     return (
         <div className={styles.container}>
-            <button className={styles.box}>전체</button>
             <button className={styles.box}>라거</button>
             <button className={styles.box}>에일</button>
             <button className={styles.box}>IPA</button>
