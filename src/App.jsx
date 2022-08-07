@@ -6,6 +6,7 @@ import { GlobalStyle } from "./styles";
 import Like from "./pages/Like";
 import Random from "./pages/Random";
 import Search from "./pages/Search";
+import Rate from "./pages/Rate";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/like" element={<Like />} />
         <Route path="/random" element={<Random />} />
         <Route path="/search" element={<Search />} />
+        <Route path="/rate" element={<Rate />} />
       </Routes>
     </>
   );

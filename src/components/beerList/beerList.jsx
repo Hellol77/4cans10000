@@ -5,8 +5,6 @@ const BeerList = (props) => {
     return (
         <div>
             <BeerBox />
-            <BeerBox />
-            <BeerBox />
         </div>
     );
 };
