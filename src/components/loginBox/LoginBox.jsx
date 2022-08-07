@@ -91,13 +91,17 @@ const LoginBox = () => {
                   min="1000"
                   max="9999"
                   placeholder="년(4자)"
+                  required
                 />
                 <select
                   className={styles.birthBoxInput}
                   aria-label="월"
                   name="month"
+                  required
                 >
-                  <option>월</option>
+                  <option value="" disabled selected>
+                    월
+                  </option>
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -117,6 +121,7 @@ const LoginBox = () => {
                   name="day"
                   maxLength="2"
                   placeholder="일"
+                  required
                 />
               </div>
               <label className={styles.label}>비밀번호</label>
