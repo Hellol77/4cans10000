@@ -7,6 +7,7 @@ import Like from "./pages/Like";
 import Random from "./pages/Random";
 import Search from "./pages/Search";
 import Rate from "./pages/Rate";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/random" element={<Random />} />
         <Route path="/search" element={<Search />} />
         <Route path="/rate" element={<Rate />} />
+        <Route path="/detail" element={<Detail />} />
       </Routes>
     </>
   );
